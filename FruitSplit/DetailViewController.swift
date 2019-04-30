@@ -11,13 +11,24 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
+        if let fruit = fruit {
             if let label = detailDescriptionLabel {
-                label.text = detail.description
+                label.text = fruit.altDescription
+            }
+            
+            if let imageURL = URL(string: fruit.urls.small) {
+                DispatchQueue.global(qos: .userInitiated).async {
+                    
+                    let imageData: NSData = NSData(contentsOf: imageURL)!
+                    DispatchQueue.main.async {
+                        let image = UIImage(data: imageData as Data)
+                        self.imageView.image = image
+                    }
+                }
             }
         }
     }
@@ -28,13 +39,17 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
-    var detailItem: NSDate? {
+    var fruit: Fruit? {
         didSet {
             // Update the view.
             configureView()
         }
     }
-
-
 }
+
+extension UIImageView {
+    func load(url: URL) {
+    }
+}
+
 

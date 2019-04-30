@@ -14,6 +14,10 @@
 		76115D302277AC7400595E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76115D2F2277AC7400595E55 /* Assets.xcassets */; };
 		76115D332277AC7400595E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76115D312277AC7400595E55 /* LaunchScreen.storyboard */; };
 		76115D3E2277AC7500595E55 /* FruitSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115D3D2277AC7500595E55 /* FruitSplitTests.swift */; };
+		76351FD72277EF470000BC80 /* FruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76351FD62277EF470000BC80 /* FruitService.swift */; };
+		76351FD92277F5020000BC80 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76351FD82277F5020000BC80 /* Fruit.swift */; };
+		76351FDB2277F9A80000BC80 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76351FDA2277F9A80000BC80 /* Authentication.swift */; };
+		76351FDD227802A40000BC80 /* Photographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76351FDC227802A40000BC80 /* Photographer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		76115D392277AC7500595E55 /* FruitSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76115D3D2277AC7500595E55 /* FruitSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSplitTests.swift; sourceTree = "<group>"; };
 		76115D3F2277AC7500595E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76351FD62277EF470000BC80 /* FruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitService.swift; sourceTree = "<group>"; };
+		76351FD82277F5020000BC80 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		76351FDA2277F9A80000BC80 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		76351FDC227802A40000BC80 /* Photographer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photographer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 			children = (
 				76115D262277AC6A00595E55 /* AppDelegate.swift */,
 				76115D282277AC6A00595E55 /* MasterViewController.swift */,
+				76351FD62277EF470000BC80 /* FruitService.swift */,
+				76351FDA2277F9A80000BC80 /* Authentication.swift */,
+				76351FD82277F5020000BC80 /* Fruit.swift */,
+				76351FDC227802A40000BC80 /* Photographer.swift */,
 				76115D2A2277AC6A00595E55 /* DetailViewController.swift */,
 				76115D2C2277AC6A00595E55 /* Main.storyboard */,
 				76115D2F2277AC7400595E55 /* Assets.xcassets */,
@@ -200,9 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76351FDD227802A40000BC80 /* Photographer.swift in Sources */,
+				76351FD92277F5020000BC80 /* Fruit.swift in Sources */,
+				76351FD72277EF470000BC80 /* FruitService.swift in Sources */,
 				76115D2B2277AC6A00595E55 /* DetailViewController.swift in Sources */,
 				76115D292277AC6A00595E55 /* MasterViewController.swift in Sources */,
 				76115D272277AC6A00595E55 /* AppDelegate.swift in Sources */,
+				76351FDB2277F9A80000BC80 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
