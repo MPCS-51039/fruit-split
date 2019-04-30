@@ -14,6 +14,9 @@ class MasterViewController: UITableViewController {
     var fruits = [Fruit]()
     
     let fruitService = FruitService()
+    
+    var spinner = UIActivityIndicatorView(style: .gray)
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,13 @@ class MasterViewController: UITableViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        self.spinner.translatesAutoresizingMaskIntoConstraints = false
+        self.spinner.startAnimating()
+        self.view.addSubview(spinner)
+        
+        self.spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        self.spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
         self.fruitService.search(for: "fruit", completion: { fruits, error in
             guard let fruits = fruits, error == nil else {
                 print(error ?? "unknown error")
@@ -35,7 +45,7 @@ class MasterViewController: UITableViewController {
             }
             self.fruits = fruits
             self.tableView.reloadData()
-//            self.spinner.stopAnimating()
+            self.spinner.stopAnimating()
         })
 
     }
