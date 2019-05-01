@@ -88,12 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				76115D262277AC6A00595E55 /* AppDelegate.swift */,
-				76115D282277AC6A00595E55 /* MasterViewController.swift */,
-				76351FD62277EF470000BC80 /* FruitService.swift */,
-				76351FDA2277F9A80000BC80 /* Authentication.swift */,
-				76351FD82277F5020000BC80 /* Fruit.swift */,
-				76351FDC227802A40000BC80 /* Photographer.swift */,
-				76115D2A2277AC6A00595E55 /* DetailViewController.swift */,
+				7635200E22794C9B0000BC80 /* Services */,
+				7635200D22794C730000BC80 /* Controllers */,
+				7635200C22794C560000BC80 /* Models */,
 				76115D2C2277AC6A00595E55 /* Main.storyboard */,
 				76115D2F2277AC7400595E55 /* Assets.xcassets */,
 				76115D312277AC7400595E55 /* LaunchScreen.storyboard */,
@@ -109,6 +106,33 @@
 				76115D3F2277AC7500595E55 /* Info.plist */,
 			);
 			path = FruitSplitTests;
+			sourceTree = "<group>";
+		};
+		7635200C22794C560000BC80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76351FDA2277F9A80000BC80 /* Authentication.swift */,
+				76351FD82277F5020000BC80 /* Fruit.swift */,
+				76351FDC227802A40000BC80 /* Photographer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7635200D22794C730000BC80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76115D282277AC6A00595E55 /* MasterViewController.swift */,
+				76115D2A2277AC6A00595E55 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7635200E22794C9B0000BC80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76351FD62277EF470000BC80 /* FruitService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,7 +11,7 @@ import UIKit
 class FruitService {
     var dataTask: URLSessionDataTask?
     
-    private let urlString = "https://api.unsplash.com/search/photos?page=1&per_page=40&query="
+    private let urlString = "https://api.unsplash.com/search/photos?page=1&per_page=20&query="
     
     func search(for searchTerm: String, completion: @escaping ([Fruit]?, Error?) -> ()) {
         authenticate(completion: { accessKey, error in
