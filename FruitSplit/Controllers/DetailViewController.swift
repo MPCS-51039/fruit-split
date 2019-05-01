@@ -13,11 +13,26 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var bioLabel: UILabel!
+    
+    var fruit: Fruit?
+
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let fruit = fruit {
             if let label = detailDescriptionLabel {
                 label.text = fruit.altDescription
+            }
+            
+            if let user = self.fruit?.user {
+                self.nameLabel.text = user.name ?? "Unavailable"
+                self.usernameLabel.text = user.username ?? "Unavailable"
+                self.locationLabel.text = user.location ?? "Unavailable"
+                self.bioLabel.text = "Unavailable"
             }
             
             if let imageURL = URL(string: fruit.urls.small) {
@@ -37,19 +52,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureView()
-    }
-
-    var fruit: Fruit? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
+        
     }
 }
 
-extension UIImageView {
-    func load(url: URL) {
-    }
-}
 
 
