@@ -30,7 +30,6 @@ class ListViewController: UITableViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
         self.spinner.translatesAutoresizingMaskIntoConstraints = false
         self.spinner.startAnimating()
         self.view.addSubview(spinner)

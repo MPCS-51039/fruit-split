@@ -33,6 +33,7 @@ class DetailViewController: UIViewController {
                 self.usernameLabel.text = user.username ?? "Unavailable"
                 self.locationLabel.text = user.location ?? "Unavailable"
                 self.bioLabel.text = user.bio ?? "Unavailable"
+                
             }
             
             if let imageURL = URL(string: fruit.urls.small) {
