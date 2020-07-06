@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76115D272277AC6A00595E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115D262277AC6A00595E55 /* AppDelegate.swift */; };
-		76115D292277AC6A00595E55 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115D282277AC6A00595E55 /* MasterViewController.swift */; };
+		76115D292277AC6A00595E55 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115D282277AC6A00595E55 /* ListViewController.swift */; };
 		76115D2B2277AC6A00595E55 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115D2A2277AC6A00595E55 /* DetailViewController.swift */; };
 		76115D2E2277AC6A00595E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76115D2C2277AC6A00595E55 /* Main.storyboard */; };
 		76115D302277AC7400595E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76115D2F2277AC7400595E55 /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		76115D232277AC6A00595E55 /* FruitSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76115D262277AC6A00595E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76115D282277AC6A00595E55 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		76115D282277AC6A00595E55 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		76115D2A2277AC6A00595E55 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		76115D2D2277AC6A00595E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76115D2F2277AC7400595E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		7635200D22794C730000BC80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				76115D282277AC6A00595E55 /* MasterViewController.swift */,
+				76115D282277AC6A00595E55 /* ListViewController.swift */,
 				76115D2A2277AC6A00595E55 /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -240,7 +240,7 @@
 				76351FD92277F5020000BC80 /* Fruit.swift in Sources */,
 				76351FD72277EF470000BC80 /* FruitService.swift in Sources */,
 				76115D2B2277AC6A00595E55 /* DetailViewController.swift in Sources */,
-				76115D292277AC6A00595E55 /* MasterViewController.swift in Sources */,
+				76115D292277AC6A00595E55 /* ListViewController.swift in Sources */,
 				76115D272277AC6A00595E55 /* AppDelegate.swift in Sources */,
 				76351FDB2277F9A80000BC80 /* Authentication.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class ListViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var fruits = [Fruit]()
