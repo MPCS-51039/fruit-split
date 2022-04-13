@@ -83,7 +83,7 @@ class ListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let fruit = fruits[indexPath.row]
-        cell.textLabel!.text = fruit.altDescription
+        cell.textLabel!.text = fruit.altDescription ?? "Unknown"
         return cell
     }
 }

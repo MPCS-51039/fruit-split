@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let fruit = fruit {
             if let label = detailDescriptionLabel {
-                label.text = fruit.altDescription
+                label.text = fruit.altDescription ?? "Unknown"
             }
             
             if let user = self.fruit?.user {

@@ -11,7 +11,7 @@ struct FruitResult: Codable {
 }
 
 struct Fruit: Codable {
-    let altDescription: String
+    let altDescription: String?
     let description: String?
     let urls: PictureResult
     let user: Photographer?
